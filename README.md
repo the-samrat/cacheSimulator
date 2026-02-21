@@ -1,3 +1,82 @@
+Cache Memory Simulator with Dynamic Replacement Policy Switching
+📌 Project Overview
+
+This project is a web-based simulation of a single-level cache memory system.
+It implements two replacement policies:
+
+FIFO (First In First Out)
+
+LRU (Least Recently Used)
+
+The simulator dynamically switches between these policies based on cache hit rate to improve performance.
+
+🎯 Objective
+
+To compare FIFO and LRU replacement policies and automatically switch between them when performance drops below a defined threshold.
+
+Switching Rule:
+
+After every N accesses:
+If hit rate < 60% → Switch policy (FIFO ↔ LRU)
+
+⚙ Features
+
+Single-level cache simulation
+
+Configurable cache size
+
+FIFO implementation
+
+LRU implementation
+
+Rule-based dynamic switching
+
+Live hit/miss tracking
+
+Final performance metrics
+
+Web-based visual interface
+
+🧠 How It Works
+
+User enters:
+
+Cache size
+
+Address sequence
+
+Initial policy
+
+N (switch check interval)
+
+For each memory access:
+
+Check for HIT or MISS
+
+Update cache
+
+Apply replacement policy if needed
+
+After every N accesses:
+
+Calculate hit rate
+
+Switch policy if hit rate < 60%
+
+📊 Metrics Displayed
+
+Total Accesses
+
+Hits
+
+Misses
+
+Final Hit Rate
+
+Number of Policy Switches
+
+Current Active Policy
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
